@@ -54,9 +54,9 @@ class Solution:
             number_entries=num_actions**num_players
             thingy=[]
             for i in range(num_actions**num_players):
-                returnythingy[i]=(onesPlace,tensPlace)
-                returnythingy[onesPlace,tensPlace]=(i)
-                onesPlace+=1
+                returnythingy[i]=(thingy)
+                returnythingy[thingy]=(i)
+                thingy[0]+=1
                 for i in range(thingy):
                     if thingy[i]>num_actions:
                         thingy[i]=0
