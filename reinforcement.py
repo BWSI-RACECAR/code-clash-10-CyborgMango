@@ -54,10 +54,10 @@ class Solution:
             number_entries=num_actions**num_players
             thingy=[0]
             for i in range(num_actions**num_players):
-                returnthingy[i]={}
+                returnythingy[i]={}
                 for j in thingy:
-                    returnthingy[i]+=j
-                    returnthingy[returnthingy[i]]=i
+                    returnythingy[i]+=j
+                    returnythingy[returnythingy[i]]=i
                 thingy[0]+=1
                 for i in range(len(thingy)):
                     if thingy[i-1]>num_actions:
