@@ -52,7 +52,7 @@ class Solution:
             #TODO: Write code below to return a dictionary with the solution to the prompt.
             returnythingy={}
             number_entries=num_actions**num_players
-            thingy=[]
+            thingy=[0]
             for i in range(num_actions**num_players):
                 if len(thingy)==1:
                     returnythingy[i]=(thingy[0])
