@@ -68,7 +68,7 @@ class Solution:
                 for i in range(len(thingy)):
                     if thingy[i]>num_actions:
                         thingy[i]=0
-                        if thingy[i+1] is not None:
+                        if len(thingy)==i:
                             thingy[i+1]+=1
                         else:
                             thingy[i+1]=1
