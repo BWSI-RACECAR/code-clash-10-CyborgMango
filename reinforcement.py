@@ -55,11 +55,11 @@ class Solution:
             onesPlace=0
             tensPlace=0
             for i in range(num_actions**num_players):
+                returnythingy[i]=(onesPlace,tensPlace)
                 onesPlace+=1
                 if onesPlace>=num_actions:
                     onesPlace=0
                     tensPlace+=1
-                returnythingy[i]=(onesPlace,tensPlace)
             return returnythingy
     
 def main():
