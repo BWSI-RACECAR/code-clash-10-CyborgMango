@@ -52,15 +52,15 @@ class Solution:
             #TODO: Write code below to return a dictionary with the solution to the prompt.
             returnythingy={}
             number_entries=num_actions**num_players
-            onesPlace=0
-            tensPlace=0
+            thingy=[]
             for i in range(num_actions**num_players):
                 returnythingy[i]=(onesPlace,tensPlace)
                 returnythingy[onesPlace,tensPlace]=(i)
                 onesPlace+=1
-                if onesPlace>=num_actions:
-                    onesPlace=0
-                    tensPlace+=1
+                for i in range(thingy):
+                    if thingy[i]>num_actions:
+                        thingy[i]=0
+                        thingy[i+1]+=1
             return returnythingy
     
 def main():
