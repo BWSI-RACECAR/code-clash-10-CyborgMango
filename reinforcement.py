@@ -54,28 +54,10 @@ class Solution:
             number_entries=num_actions**num_players
             thingy=[0]
             for i in range(num_actions**num_players):
-                if num_players==1:
-                    if len(thingy)==1:
-                        returnythingy[i]=(thingy[0])
-                        returnythingy[thingy[0]]=(i)
-                if num_players==2:
-                    if len(thingy)==1:
-                        returnythingy[i]=(thingy[0],0)
-                        returnythingy[thingy[0],0]=(i)
-                    if len(thingy)==2:
-                        returnythingy[i]=(thingy[0],thingy[1])
-                        returnythingy[thingy[0],thingy[1]]=(i)
-                if num_players==3:
-                    if len(thingy)==1:
-                        returnythingy[i]=(thingy[0],0,0)
-                        returnythingy[thingy[0],0,0]=(i)
-                    if len(thingy)==2:
-                        returnythingy[i]=(thingy[0],thingy[1],0)
-                        returnythingy[thingy[0],thingy[1],0]=(i)
-                    if len(thingy)==3:
-                        returnythingy[i]=(thingy[0],thingy[1],thingy[2])
-                        returnythingy[thingy[0],thingy[1],thingy[2]]=(i)
-                
+                returnthingy[i]={}
+                for j in thingy:
+                    returnthingy[i]+=j
+                    returnthingy[returnthingy[i]]=i
                 thingy[0]+=1
                 for i in range(len(thingy)):
                     if thingy[i-1]>num_actions:
