@@ -66,12 +66,12 @@ class Solution:
                 
                 thingy[0]+=1
                 for i in range(len(thingy)):
-                    if thingy[i]>num_actions:
-                        thingy[i]=0
-                        if len(thingy)==i:
-                            thingy[i+1]+=1
+                    if thingy[i-1]>num_actions:
+                        thingy[i-1]=0
+                        if len(thingy)==i-1:
+                            thingy[i]+=1
                         else:
-                            thingy[i+1]=1
+                            thingy[i]=1
             return returnythingy
     
 def main():
