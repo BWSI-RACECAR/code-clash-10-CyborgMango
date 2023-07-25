@@ -56,6 +56,7 @@ class Solution:
             tensPlace=0
             for i in range(num_actions**num_players):
                 returnythingy[i]=(onesPlace,tensPlace)
+                returnythingy[onesPlace,tensPlace]=(i)
                 onesPlace+=1
                 if onesPlace>=num_actions:
                     onesPlace=0
