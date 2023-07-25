@@ -54,7 +54,7 @@ class Solution:
             number_entries=num_actions**num_players
             thingy=[0]
             for i in range(num_actions**num_players):
-                returnythingy[i]={}
+                returnythingy[i]=()
                 for j in thingy:
                     returnythingy[i]+=(i//(num_actions**j)%num_actions,)
                     returnythingy[returnythingy[i]]=i
