@@ -68,7 +68,10 @@ class Solution:
                 for i in range(len(thingy)):
                     if thingy[i]>num_actions:
                         thingy[i]=0
-                        thingy[i+1]+=1
+                        if thingy[i+1] is not None:
+                            thingy[i+1]+=1
+                        else:
+                            thingy[i+1]=1
             return returnythingy
     
 def main():
