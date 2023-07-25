@@ -55,11 +55,11 @@ class Solution:
             thingy=[0]
             for i in range(num_actions**num_players):
                 if len(thingy)==1:
-                    returnythingy[i]=(thingy[0])
-                    returnythingy[thingy[0]]=(i)
+                    returnythingy[i]=(thingy[0],0,0)
+                    returnythingy[thingy[0],0,0]=(i)
                 if len(thingy)==2:
-                    returnythingy[i]=(thingy[0],thingy[1])
-                    returnythingy[thingy[0],thingy[1]]=(i)
+                    returnythingy[i]=(thingy[0],thingy[1],0)
+                    returnythingy[thingy[0],thingy[1],0]=(i)
                 if len(thingy)==3:
                     returnythingy[i]=(thingy[0],thingy[1],thingy[2])
                     returnythingy[thingy[0],thingy[1],thingy[2]]=(i)
