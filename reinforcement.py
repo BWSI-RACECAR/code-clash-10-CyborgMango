@@ -65,7 +65,7 @@ class Solution:
                     returnythingy[thingy[0],thingy[1],thingy[2]]=(i)
                 
                 thingy[0]+=1
-                for i in range(thingy):
+                for i in range(len(thingy)):
                     if thingy[i]>num_actions:
                         thingy[i]=0
                         thingy[i+1]+=1
